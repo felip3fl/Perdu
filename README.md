@@ -16,7 +16,7 @@
 
 ## :hammer: Funcionalidades do projeto
 
-- `Funcionalidade 1`: ???
+- `Funcionalidade 1`: Backup dos savegames
 - `Funcionalidade 2`: ???
 - `Funcionalidade 3`: ???
 
