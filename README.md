@@ -18,7 +18,7 @@
 
 - `Funcionalidade 1`: Backup automatizados
 - `Funcionalidade 2`: Compactação dos arquivos
-- `Funcionalidade 3`: ???
+- `Funcionalidade 3`: Verificação de modificação
 
 <BR>
   
