@@ -16,8 +16,8 @@
 
 ## :hammer: Funcionalidades do projeto
 
-- `Funcionalidade 1`: Backup dos savegames
-- `Funcionalidade 2`: ???
+- `Funcionalidade 1`: Backup automatizados
+- `Funcionalidade 2`: Compactação dos arquivos
 - `Funcionalidade 3`: ???
 
 <BR>
