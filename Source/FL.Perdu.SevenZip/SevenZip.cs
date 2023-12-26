@@ -1,12 +1,12 @@
 ﻿using System.Text;
 
-namespace FL.Perdu._7zip
+namespace FL.Perdu.SevenZip
 {
-    public class SevenZip
+    public class SevenZipPrompt
     {
         readonly string SevenZipAddress = @"C:\Program Files\7-Zip\7z.exe";
 
-        public SevenZip()
+        public SevenZipPrompt()
         {
             checkInstalation();
         }
