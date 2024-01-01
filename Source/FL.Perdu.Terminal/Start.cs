@@ -17,7 +17,7 @@ namespace FL.Perdu.Terminal
 
             foreach (var item in localFileService.programDetails)
             {
-                Console.WriteLine($"[{item.Order}] {item.Name}");
+                Console.WriteLine($"[{item.Order.ToString("00")}] {item.Name}");
             }
 
             Console.ReadKey();
