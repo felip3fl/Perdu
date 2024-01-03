@@ -26,8 +26,17 @@ namespace FL.Perdu.Terminal
             var isSuccess = backupService.Backup(localFileService.programDetails[userOption-1]);
         }
 
-        private static void ShowOption()
+        private static void ShowApresentation()
         {
+            Console.WriteLine(@"  ____    ____   __      __      ____     ____      ____   __          ");
+            Console.WriteLine(@" / ___\  / ___\ /\ \    /\_\    / __ \  /\___ \    / ___\ /\ \         ");
+            Console.WriteLine(@"/\ \__/ /\ \__/ \ \ \   \/\ \  /\ \_\ \ \/___\ \  /\ \__/ \ \ \        ");
+            Console.WriteLine(@"\ \  __\\ \  _\  \ \ \   \ \ \ \ \  __/   /\_ \ \ \ \  __\ \ \ \       ");
+            Console.WriteLine(@" \ \ \_/ \ \ \/   \ \ \   \ \ \ \ \ \/    \/_\ \ \ \ \ \_/  \ \ \      ");
+            Console.WriteLine(@"  \ \ \   \ \ \___ \ \ \___\ \ \ \ \ \       _\_\ \ \ \ \    \ \ \___  ");
+            Console.WriteLine(@"   \ \_\   \ \____\ \ \____\\ \_\ \ \_\     /\_____\ \ \_\    \ \____\ ");
+            Console.WriteLine(@"    \/_/    \/____/  \/____/ \/_/  \/_/     \/_____/  \/_/     \/____/ ");
+        }
             
         }
     }
