@@ -6,10 +6,8 @@ namespace FL.Perdu.Terminal
     {
         public static void Main(string[] args)
         {
-            ShowApresentation();
+            ShowPresentation();
             DefineConsoleTitle();
-            Console.WriteLine("FLex Perdu v1.0");
-            ShowOption();
 
             LocalFileService localFileService = new();
             localFileService.LoadProgramDetail();
@@ -28,7 +26,7 @@ namespace FL.Perdu.Terminal
             var isSuccess = backupService.Backup(localFileService.programDetails[userOption-1]);
         }
 
-        private static void ShowApresentation()
+        private static void ShowPresentation()
         {
             Console.WriteLine("  ____    ____   __      __      ____     ____      ____   __  ");
             Console.WriteLine(" / ___\\  / ___\\ /\\ \\    /\\_\\    / __ \\  /\\___ \\    / ___\\ /\\ \\  ");
@@ -39,7 +37,7 @@ namespace FL.Perdu.Terminal
             Console.WriteLine("   \\ \\_\\   \\ \\____\\ \\ \\____\\\\ \\_\\ \\ \\_\\     /\\_____\\ \\ \\_\\    \\ \\____\\ ");
             Console.WriteLine("    \\/_/    \\/____/  \\/____/ \\/_/  \\/_/     \\/_____/  \\/_/     \\/____/ ");
         }
-            
+
         private static void DefineConsoleTitle()
         {
             Console.Title = "FL PERDU v1.0";

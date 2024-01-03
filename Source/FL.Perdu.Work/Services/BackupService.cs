@@ -20,5 +20,13 @@ namespace FL.Perdu.Work.Services
 
             sevenZip.compact( origin, destination, fileName);
         }
+
+        public async Task<bool> CheckBackup(ProgramDetail programDetail)
+        {
+            //return await System.IO.File.Exists(programDetail.BackupAddress) && System.IO.File.GetFileSize(programDetail.BackupAddress) > 0;
+            return true;
+        }
+
+
     }
 }

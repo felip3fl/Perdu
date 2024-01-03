@@ -8,7 +8,9 @@ namespace FL.Perdu.SevenZip
 
         public SevenZipPrompt()
         {
-            checkInstalation();
+            if (!checkInstalation()){
+                throw new Exception("SevenZip is not installed");
+            }
         }
 
         /// <summary>
@@ -30,7 +32,7 @@ namespace FL.Perdu.SevenZip
 
         private bool checkInstalation()
         {
-            return true;
+            return System.IO.File.Exists(SevenZipAddress);
         }
     }
 }
