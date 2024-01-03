@@ -6,6 +6,8 @@ namespace FL.Perdu.Terminal
     {
         public static void Main(string[] args)
         {
+            ShowApresentation();
+            DefineConsoleTitle();
             Console.WriteLine("FLex Perdu v1.0");
             ShowOption();
 
@@ -38,6 +40,9 @@ namespace FL.Perdu.Terminal
             Console.WriteLine(@"    \/_/    \/____/  \/____/ \/_/  \/_/     \/_____/  \/_/     \/____/ ");
         }
             
+        private static void DefineConsoleTitle()
+        {
+            Console.Title = "FL PERDU v1.0";
         }
     }
 }
