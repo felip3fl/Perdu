@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FL.Perdu.Csv\FL.Perdu.Csv.csproj" />
     <ProjectReference Include="..\FL.Perdu.Model\FL.Perdu.Model.csproj" />
     <ProjectReference Include="..\FL.Perdu.SevenZip\FL.Perdu.SevenZip.csproj" />
   </ItemGroup>
