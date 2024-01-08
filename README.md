@@ -12,6 +12,10 @@
  Projeto desenvolvido usando C# com o proposito de realizar rotinas de backup
 </p>
 
+![image](https://github.com/felip3fl/FL_PERDU/assets/20684484/a8e2aa54-d4a6-4f09-b3a1-225fbdd16115)
+
+
+
 <BR>
 
 ## :hammer: Funcionalidades do projeto
