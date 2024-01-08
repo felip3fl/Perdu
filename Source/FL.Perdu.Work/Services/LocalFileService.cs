@@ -1,5 +1,4 @@
-﻿using FL.Perdu.Csv;
-using FL.Perdu.Model;
+﻿using FL.Perdu.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +12,7 @@ namespace FL.Perdu.Work.Services
     {
         public List<ProgramDetail> programDetails = new List<ProgramDetail>();
 
-        public void LoadProgramDetail()
+        public List<ProgramDetail> LoadProgramDetail()
         {
             var dataFromFile = ReadFile();
             var currentLineNumber = 0;
@@ -35,6 +34,8 @@ namespace FL.Perdu.Work.Services
             RemoveHead(programDetails);
 
             DefineProgramName(programDetails);
+
+            return programDetails;
         }
 
         private StreamReader ReadFile()
