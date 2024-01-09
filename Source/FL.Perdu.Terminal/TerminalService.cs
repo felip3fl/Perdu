@@ -10,7 +10,8 @@ namespace FL.Perdu.Terminal
 {
     public class TerminalService
     {
-        public List<ProgramDetail> programDetails;
+        public List<ProgramDetail> programDetails = new();
+        public List<TerminalOptionList> terminalOptionLists = new();
 
         public ProgramDetail UserChoiceProgram()
         {
@@ -28,13 +29,61 @@ namespace FL.Perdu.Terminal
             var isSuccess = backupService.Backup(programDetail);
         }
 
+        private bool checkListSize()
+        {
+            if (programDetails.Count == 0)
+                return false;
+
+            return true;
+        }
+
+        public void loadProgramOptions()
+        {
+            if (!checkListSize())
+            {
+                Console.WriteLine("\nATENTION: There is no program");
+            }
+            else
+            {
+                Console.WriteLine("\nPlease select the follow options: ");
+
+                foreach (var item in programDetails)
+                {
+                    terminalOptionLists.Add(new TerminalOptionList { 
+                        id = terminalOptionLists.Count + 1, 
+                        optionName = item.Name, 
+                        terminalOptionType = TerminalOptionType.program 
+                    });
+                }
+            }
+        }
+
         public void showOptions()
         {
-            Console.WriteLine("\nPlease select the follow options: ");
-            foreach (var item in programDetails)
+            foreach(var item in terminalOptionLists)
+                Console.WriteLine(
+                    $"[{item.id.ToString("00")}] " +
+                    $"{item.optionName}");
+        }
+
+        public void loadOthersOption()
+        {
+            Console.WriteLine();
+
+            if (programDetails.Count > 1)
+                terminalOptionLists.Add(new TerminalOptionList { 
+                    id = terminalOptionLists.Count + 1, 
+                    optionName = "All", 
+                    terminalOptionType = TerminalOptionType.allProgram 
+                });
+
+            terminalOptionLists.Add(new TerminalOptionList
             {
-                Console.WriteLine($"[{item.Order.ToString("00")}] {item.Name}");
-            }
+                id = terminalOptionLists.Count + 1,
+                optionName = "Exit",
+                terminalOptionType = TerminalOptionType.exit
+            });
+            
         }
 
         public void loadPrograms()

@@ -12,11 +12,11 @@ namespace FL.Perdu.Terminal
             terminalService.DefineConsoleTitle();
 
             terminalService.loadPrograms();
+            terminalService.loadProgramOptions();
+            terminalService.loadOthersOption();
             terminalService.showOptions();
             var chosenProgram = terminalService.UserChoiceProgram();
             terminalService.executeBackup(chosenProgram);
         }
-
-
     }
 }
