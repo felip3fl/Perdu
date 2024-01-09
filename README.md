@@ -1,7 +1,9 @@
-<h3 align="center"> <img src="https://user-images.githubusercontent.com/20684484/212168629-795c6dd1-1205-4d20-b4b5-5c1b00ce1818.png" width="180px" align="center" ><BR><BR>FLex Perdu<BR><BR>
+<h3 align="center"> <img src="https://github.com/felip3fl/FL_PERDU/assets/20684484/ade47007-be60-4a69-bd36-5653b55a3aff" width="180px" align="center" ><BR><BR>FLex Perdu<BR><BR>
 
-<img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-4aadd4">
-<img src="https://img.shields.io/badge/PROJECT%20VERSION-0.0.0-4aadd4">
+
+
+<img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-ff265c">
+<img src="https://img.shields.io/badge/PROJECT%20VERSION-0.0.0-ff262f">
 </h3>
 
 <BR>
