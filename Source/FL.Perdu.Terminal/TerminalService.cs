@@ -18,7 +18,15 @@ namespace FL.Perdu.Terminal
             Console.Write("\nYour choice: ");
 
             var userOption = Convert.ToInt32(Console.ReadLine());
-            var chosenProgram = programDetails[userOption - 1];
+
+            var option = terminalOptionLists.Where(x => x.id == userOption).FirstOrDefault();
+
+            if (option.terminalOptionType == TerminalOptionType.exit)
+            {
+                return null;
+            }
+
+            var chosenProgram = programDetails.Where(y => y.Name == option.optionName).FirstOrDefault();
 
             return chosenProgram;
         }
