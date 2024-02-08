@@ -4,19 +4,24 @@ namespace FL.Perdu.Terminal
 {
     public class Start
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             TerminalService terminalService = new TerminalService();
-
-            terminalService.ShowPresentation();
             terminalService.DefineConsoleTitle();
 
             terminalService.loadPrograms();
             terminalService.loadProgramOptions();
             terminalService.loadOthersOption();
-            terminalService.showOptions();
-            var chosenProgram = terminalService.UserChoiceProgram();
-            terminalService.executeBackup(chosenProgram);
+
+            while (true)
+            {
+                Console.Clear();
+                terminalService.ShowPresentation();
+                terminalService.showOptions("\nPlease select the follow options:\n");
+                var chosenProgram = terminalService.UserChoiceProgram();
+                await terminalService.executeBackupAsync(chosenProgram);
+            }
+
         }
     }
 }

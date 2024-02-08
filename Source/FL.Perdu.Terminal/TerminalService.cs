@@ -31,10 +31,11 @@ namespace FL.Perdu.Terminal
             return chosenProgram;
         }
 
-        public void executeBackup(ProgramDetail programDetail)
+        public async Task executeBackupAsync(ProgramDetail programDetail)
         {
+            Console.Clear();
             BackupService backupService = new();
-            var isSuccess = backupService.Backup(programDetail);
+            await backupService.Backup(programDetail);
         }
 
         private bool checkListSize()
@@ -53,8 +54,6 @@ namespace FL.Perdu.Terminal
             }
             else
             {
-                Console.WriteLine("\nPlease select the follow options: ");
-
                 foreach (var item in programDetails)
                 {
                     terminalOptionLists.Add(new TerminalOptionList { 
@@ -66,9 +65,11 @@ namespace FL.Perdu.Terminal
             }
         }
 
-        public void showOptions()
+        public void showOptions(string message = "")
         {
-            foreach(var item in terminalOptionLists)
+            Console.WriteLine(message);
+
+            foreach (var item in terminalOptionLists)
                 Console.WriteLine(
                     $"[{item.id.ToString("00")}] " +
                     $"{item.optionName}");
