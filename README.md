@@ -1,12 +1,10 @@
-<h3 align="center"> <img src="https://github.com/felip3fl/FL_PERDU/assets/20684484/ade47007-be60-4a69-bd36-5653b55a3aff" width="180px" align="center" ><BR><BR>FLEX PERDU<BR><BR>
-
-
-
+<h3 align="center"> <img src="https://github.com/felip3fl/FL_PERDU/assets/20684484/ade47007-be60-4a69-bd36-5653b55a3aff" width="180px" align="center" ><BR><BR>FLEX PERDU
+<BR><BR>
 <img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-ff265c">
 <img src="https://img.shields.io/badge/PROJECT%20VERSION-0.0.0-ff262f">
+<BR><BR>
 </h3>
 
-<BR>
 
 ## 📃 Descrição do projeto
 
