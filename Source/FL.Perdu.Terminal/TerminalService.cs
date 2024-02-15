@@ -13,7 +13,7 @@ namespace FL.Perdu.Terminal
         public List<ProgramDetail> programDetails = new();
         public List<TerminalOptionList> terminalOptionLists = new();
 
-        public ProgramDetail UserChoiceProgram()
+        public TerminalOptionList UserChoice()
         {
             Console.Write("\nYour choice: ");
 
@@ -21,14 +21,14 @@ namespace FL.Perdu.Terminal
 
             var option = terminalOptionLists.Where(x => x.id == userOption).FirstOrDefault();
 
-            if (option.terminalOptionType == TerminalOptionType.exit)
-            {
-                return null;
-            }
+            return option;
+        }
 
-            var chosenProgram = programDetails.Where(y => y.Name == option.optionName).FirstOrDefault();
+        public ProgramDetail getProgramDetail(TerminalOptionList terminalOptionList) {
 
+            var chosenProgram = programDetails.Where(y => y.Name == terminalOptionList.optionName).FirstOrDefault();
             return chosenProgram;
+            
         }
 
         public async Task executeBackupAsync(ProgramDetail programDetail)

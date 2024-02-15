@@ -1,4 +1,5 @@
-﻿using FL.Perdu.Work.Services;
+﻿using FL.Perdu.Model;
+using FL.Perdu.Work.Services;
 
 namespace FL.Perdu.Terminal
 {
@@ -18,8 +19,12 @@ namespace FL.Perdu.Terminal
                 Console.Clear();
                 terminalService.ShowPresentation();
                 terminalService.showOptions("\nPlease select the follow options:\n");
-                var chosenProgram = terminalService.UserChoiceProgram();
-                await terminalService.executeBackupAsync(chosenProgram);
+                var chosenProgram = terminalService.UserChoice();
+
+                if (chosenProgram.terminalOptionType == TerminalOptionType.exit) break;
+
+                var programDetail = terminalService.getProgramDetail(chosenProgram);
+                await terminalService.executeBackupAsync(programDetail);
             }
 
         }
