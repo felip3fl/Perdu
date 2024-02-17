@@ -21,7 +21,7 @@ namespace FL.Perdu.Terminal
                 terminalService.showOptions("\nPlease select the follow options:\n");
                 var chosenProgram = terminalService.UserChoice();
 
-                if (chosenProgram.terminalOptionType == TerminalOptionType.exit) break;
+                if (chosenProgram.terminalOptionType != TerminalOptionType.program) break;
 
                 var programDetail = terminalService.getProgramDetail(chosenProgram);
                 await terminalService.executeBackupAsync(programDetail);
