@@ -4,6 +4,7 @@
     {
         program,
         allProgram,
-        exit
+        exit,
+        invalid
     }
 }

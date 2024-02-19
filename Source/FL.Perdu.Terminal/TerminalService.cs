@@ -17,7 +17,10 @@ namespace FL.Perdu.Terminal
         {
             Console.Write("\nYour choice: ");
 
-            var userOption = Convert.ToInt32(Console.ReadLine());
+            var isValidInt = int.TryParse(Console.ReadLine(), out int userOption) ;
+            
+            if(isValidInt)
+                return new TerminalOptionList(){terminalOptionType = TerminalOptionType.invalid};
 
             var option = terminalOptionLists.Where(x => x.id == userOption).FirstOrDefault();
 
