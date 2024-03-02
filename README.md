@@ -5,8 +5,6 @@
 <BR><BR>
 </h3>
 
-![FL Metro]()
-
 ## 📃 Descrição do projeto
 
 <p align="justify">
