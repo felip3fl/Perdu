@@ -1,4 +1,4 @@
-<h3 align="center"> <img src="https://github.com/felip3fl/FL_PERDU/assets/20684484/ade47007-be60-4a69-bd36-5653b55a3aff" width="180px" align="center" ><BR><BR>FLEX PERDU
+<h3 align="center"> <img src="https://github.com/felip3fl/FL_PERDU/assets/20684484/35998551-18bf-4478-a49f-9c10795239d5" width="180px" align="center" ><BR><BR>FLEX PERDU
 <BR><BR>
 <img src="https://img.shields.io/badge/STATUS-FINALIZADO-ff265c">
 <img src="https://img.shields.io/badge/PROJECT%20VERSION-1.0.0-ff262f">
